@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wordle_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/guess3"
+        android:layout_width="383dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="290dp"
+        android:text="####"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guessText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guess2" />
+
+    <TextView
+        android:id="@+id/guess2"
+        android:layout_width="383dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="395dp"
+        android:text="####"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guessText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guess1" />
+
+    <EditText
+        android:id="@+id/guessText"
+        android:layout_width="266dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="622dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="100dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="626dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="44dp"
+        android:text="Guess!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guessText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guess1"
+        android:layout_width="383dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="497dp"
+        android:text="####"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guessText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/GuessAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginBottom="5dp"
+        android:text="Guesses:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guessAmountNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guess3" />
+
+    <TextView
+        android:id="@+id/guessAmountNum"
+        android:layout_width="67dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toTopOf="@+id/guessText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/correctAnswerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="80dp"
+        android:text="Correct Answer:"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/guessText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GuessAmountText"
+        app:layout_constraintTop_toBottomOf="@+id/guess3" />
+
+    <TextView
+        android:id="@+id/correctAnswer"
+        android:layout_width="142dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/guessText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GuessAmountText"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
