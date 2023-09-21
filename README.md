@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-(https://github.com/VirtuallyInsxne/WordleLab/assets/113473537/52f10afd-f154-4de0-80ff-ac087aa36a35)
+[(https://github.com/VirtuallyInsxne/WordleLab/assets/113473537/52f10afd-f154-4de0-80ff-ac087aa36a35)](https://imgur.com/a/jWwJsPC)
 
 ## Notes
 
