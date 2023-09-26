@@ -32,6 +32,8 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
+- I actually was only able to have a reset button that cleared the previous guesses, but it doesn't end up starting a new game with a new word. Something to work on for the future of this application.
+
 ## License
 
     Copyright 2023 Christopher Madrigal
