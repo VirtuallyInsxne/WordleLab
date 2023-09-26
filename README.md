@@ -33,6 +33,7 @@ Here's a walkthrough of implemented user stories:
 ## Notes
 
 - I actually was only able to have a reset button that cleared the previous guesses, but it doesn't end up starting a new game with a new word. Something to work on for the future of this application.
+- The user isn't allowed to make any more guesses after they have made 3 because it switches to a reset button which doesn't allow any further guessing no matter whether they input something or not.
 
 ## License
 
